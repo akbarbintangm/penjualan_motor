@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class MDTransaksi extends Model
 {
-    use HasFactory;
+    protected $table = "m_d_transaksis";
+    protected $fillable = [
+    ];
+    protected $primaryKey = "id";
 }

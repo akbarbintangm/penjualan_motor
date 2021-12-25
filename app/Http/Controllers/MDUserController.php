@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MUser;
 use App\Models\MDUser;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class MDUserController extends Controller
 {

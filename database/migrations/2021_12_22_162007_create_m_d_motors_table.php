@@ -14,7 +14,11 @@ class CreateMDMotorsTable extends Migration
     public function up()
     {
         Schema::create('m_d_motors', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_motors');
+            $table->bigInteger('id_m_motors');
+            $table->string('warna_m_d_motors');
+            $table->string('varian_abs_m_d_motors')->nullable();
+            $table->string('transmisi_m_d_motors')->nullable();
             $table->timestamps();
         });
     }

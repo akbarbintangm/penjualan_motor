@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MAdmin;
 use App\Models\MDAdmin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class MDAdminController extends Controller
 {

@@ -14,7 +14,12 @@ class CreateMMotorsTable extends Migration
     public function up()
     {
         Schema::create('m_motors', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_motors');
+            $table->string('nama_m_motors');
+            $table->string('brand_m_motors')->nullable();
+            $table->string('tipe_m_motors')->nullable();
+            $table->text('foto_m_motors');
+            $table->bigInteger('harga_m_motors');
             $table->timestamps();
         });
     }

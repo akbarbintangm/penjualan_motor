@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class MDUser extends Model
 {
-    use HasFactory;
+    protected $table = "m_d_users";
+    protected $fillable = [
+        'id_m_users',
+        'ktp_m_d_users',
+        'nomor_m_d_users',
+        'alamat_m_d_users'
+    ];
+    protected $primaryKey = "id_m_d_users";
 }

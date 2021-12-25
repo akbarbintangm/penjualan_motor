@@ -14,7 +14,11 @@ class CreateMDUsersTable extends Migration
     public function up()
     {
         Schema::create('m_d_users', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id_m_d_users');
+            $table->bigInteger('im_d_users');
+            $table->bigInteger('ktp_m_d_users');
+            $table->bigInteger('nomor_m_d_users')->nullable();
+            $table->text('alamat_m_d_users')->nullable();
             $table->timestamps();
         });
     }

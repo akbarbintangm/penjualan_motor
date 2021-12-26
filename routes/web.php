@@ -23,7 +23,7 @@ use App\Http\Controllers\MDTransaksiController;
 
 // Landing Page
 Route::get('/', function () {
-    return view('landing.index');
+    return view('home.index');
 });
 
 // Login Page
@@ -39,7 +39,7 @@ Route::get('/register', function () {
 Auth::routes();
 /* Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */
 
-Route::group(['middleware' => 'auth'], function () {
+/* Route::group(['middleware' => 'auth'], function () { */
     // Dashboard, Profile, Etc
     Route::view('/home', 'master.dashboard')->name('dashboard');
     Route::view('/dashboard', 'master.dashboard')->name('dashboard');
@@ -138,4 +138,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/detail_transaksi/detail/edit/{id}', [MDTransaksiController::class, 'detailEdit']);
     Route::post('/detail_transaksi/detail/update/{id}', [MDTransaksiController::class, 'detailUpdate']);
     Route::get('/detail_transaksi/detail/destroy/{id}', [MDTransaksiController::class, 'detailDestroy']); */
-}
+/* } */

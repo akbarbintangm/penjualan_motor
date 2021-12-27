@@ -34,7 +34,7 @@ $(document).ready(function () {
     //counterup
     $('.counter').counterUp({
         delay: 10,
-        time: 500
+        time: 1000
     });
 
     // Waves

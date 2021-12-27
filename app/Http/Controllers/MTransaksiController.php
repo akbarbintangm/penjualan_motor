@@ -17,7 +17,7 @@ class MTransaksiController extends Controller
      */
     public function index()
     {
-        //
+        return view('master.transaksi.index');
     }
 
     /**

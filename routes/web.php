@@ -61,12 +61,12 @@ Auth::routes();
     Route::get('/admin/detail/destroy/{id}', [MAdminController::class, 'detailDestroy']);
 
     // Detail Admin
-    Route::get('/detail_admin', [MDAdminController::class, 'index']);
+    /* Route::get('/detail_admin', [MDAdminController::class, 'index']);
     Route::get('/detail_admin/create', [MDAdminController::class, 'create']);
     Route::post('/detail_admin/store', [MDAdminController::class, 'store']);
     Route::get('/detail_admin/edit/{id}', [MDAdminController::class, 'edit']);
     Route::post('/detail_admin/update/{id}', [MDAdminController::class, 'update']);
-    Route::get('/detail_admin/destroy/{id}', [MDAdminController::class, 'destroy']);
+    Route::get('/detail_admin/destroy/{id}', [MDAdminController::class, 'destroy']); */
 
     // Master User
     Route::get('/user', [MUserController::class, 'index']);
@@ -84,12 +84,12 @@ Auth::routes();
     Route::get('/user/detail/destroy/{id}', [MUserController::class, 'detailDestroy']);
 
     // Detail User
-    Route::get('/detail_user', [MDUserController::class, 'index']);
+    /* Route::get('/detail_user', [MDUserController::class, 'index']);
     Route::get('/detail_user/create', [MDUserController::class, 'create']);
     Route::post('/detail_user/store', [MDUserController::class, 'store']);
     Route::get('/detail_user/edit/{id}', [MDUserController::class, 'edit']);
     Route::post('/detail_user/update/{id}', [MDUserController::class, 'update']);
-    Route::get('/detail_user/destroy/{id}', [MDUserController::class, 'destroy']);
+    Route::get('/detail_user/destroy/{id}', [MDUserController::class, 'destroy']); */
 
     // Master Motor
     Route::get('/motor', [MMotorController::class, 'index']);

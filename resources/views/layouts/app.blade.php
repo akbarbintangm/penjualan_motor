@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="{{ asset('lib/css/main.min.css') }}">
     @yield('meta-link')
 </head>
-<body id="page-top" class="@yield('bg-body')">
-    @yield('content');
+<body id="page-top" class="@yield('bg-body') animate__animated animate__fadeIn">
+    @yield('content')
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
